@@ -1221,11 +1221,7 @@ img.mfp-img {
     font-style: normal;
     font-weight: 400;
     src: url("fonts/supercell-magic.html");
-    src: url("fonts/supercell-magic-.html#iefix") format('embedded-opentype'), 
-		 url("https://github.com/dlimars/supercell-fonts/blob/master/supercell-magic-webfont.woff") format('woff'), 
-		 url("https://github.com/dlimars/supercell-fonts/blob/master/supercell-magic-webfont.ttf") format('truetype'),
-		 url("https://github.com/dlimars/supercell-fonts/blob/master/supercell-magic-webfont.eot"), 
-		 url("https://github.com/dlimars/supercell-fonts/blob/master/supercell-magic-webfont.svg") format('svg');
+    src: url("fonts/supercell-magic-.html#iefix") format('embedded-opentype'), url("fonts/supercell-magic.woff") format('woff'), url("fonts/supercell-magic.ttf") format('truetype'), url("fonts/supercell-magic-2.html#supercell-magicregular") format('svg')
 }
 
 @font-face {
@@ -4157,7 +4153,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "../php/form-process.php",
+        url: "php/form-process.php",
         data: "name=" + name + "&email=" + email + "&message=" + message,
         success : function(text){
             if (text == "success"){
